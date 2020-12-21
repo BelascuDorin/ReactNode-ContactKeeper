@@ -1,5 +1,6 @@
 {
     "mongoURI": "mongodb+srv://Dorin123:123qwe@contactkeeper.o17x5.mongodb.net/contactkeeper?retryWrites=true&w=majority",
+    "jwtSecret": "secret",
     "description" : "used for global variables, works together with config library from packages.json"
 }
 
