@@ -1,6 +1,12 @@
 const express = require('express');
+const connectDB = require('./config/db');
 
 const app = express();
+
+connectDB();
+
+// Init Middleware
+app.use(express.json({ extended: false})); // Accept json data
 
 app.get('/', (req, res) => res.send({msg : 'Welcome to the contact keeper API'}));
 
