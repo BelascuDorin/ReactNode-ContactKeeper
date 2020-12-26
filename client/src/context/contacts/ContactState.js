@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import uuid from 'uuid';
-import ContactContext from './contextContact';
+import ContactContext from './contactContext';
 import contactReducer from './contactsReducer';
 import {
     ADD_CONTACT,
