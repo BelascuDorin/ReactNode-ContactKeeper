@@ -7,7 +7,7 @@ import {
     DELETE_CONTACT,
     SET_CURRENT,
     CLEAR_CURRENT,
-    UPDATE_CONTACTS,
+    UPDATE_CONTACT,
     FILTER_CONTACTS,
     CLEAR_FILTER
 } from '../types'
@@ -64,7 +64,10 @@ const ContactState = props => {
     };
 
     // Update Contact
-
+    // Set Current Contact
+    const updateContact = contact => {
+        dispatch({ type: UPDATE_CONTACT, payload: contact });
+    };
     // Filter Contacts
 
     // Clear Filter
@@ -78,6 +81,7 @@ const ContactState = props => {
                 deleteContact,
                 setCurrent,
                 clearCurrent,
+                updateContact,
             }}
         >
             
